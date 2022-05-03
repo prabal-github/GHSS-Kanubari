@@ -3,8 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
-const myLoader = ({ src, height, width }) => {
-  return `https://source.unsplash.com/${width}x${height}/?student,college`
+const myLoader = ({ src, genre }) => {
+  return `https://source.unsplash.com/1820x900/?student,food`
 }
 
 export default function Home() {
@@ -49,23 +49,21 @@ export default function Home() {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <Image loader={myLoader} src="school,cars" width={1820} height={900} className="d-block w-100" alt="1st carousel" />
+            <Image loader={myLoader} src={`https://source.unsplash.com/1820x900/?student,college`} genre='school' width={1820} height={900} className="d-block w-100 blur-sm" alt="1st carousel" />
               <div className="carousel-caption d-none d-md-block">
                 <h5 className="font-bold text-5xl">First slide label</h5>
                 <div className="text-xl">Some representative placeholder content for the first slide.</div>
               </div>
             </div>
             <div className="carousel-item">
-              {/* <Image src="https://source.unsplash.com/1820x900/?school,student"  width={1820} height={900}  className="d-block w-100" alt="..." /> */}
-              <Image loader={myLoader} src="school,cars" width={1820} height={900} className="d-block w-100" alt="1st carousel" />
+              <Image loader={myLoader} src={`https://source.unsplash.com/1820x900/?student,cars`} genre='cars' width={1820} height={900} className="d-block w-100 blur-sm" alt="2nd carousel" />
               <div className="carousel-caption d-none d-md-block">
                 <h5 className="font-bold text-5xl">Second slide label</h5>
                 <div className="text-xl">Some representative placeholder content for the second slide.</div>
               </div>
             </div>
             <div className="carousel-item">
-              {/* <Image src="https://source.unsplash.com/1820x900/?teacher,college"  width={1820} height={900}  className="d-block w-100" alt="..." /> */}
-              <Image loader={myLoader} src="school,cars" width={1820} height={900} className="d-block w-100" alt="1st carousel" />
+              <Image loader={myLoader} src={`https://source.unsplash.com/1820x900/?student,food`} genre='food' width={1820} height={900} className="d-block w-100 blur-sm" alt="3rd carousel" />
               <div className="carousel-caption d-none d-md-block">
                 <h5 className="font-bold text-5xl">Third slide label</h5>
                 <div className="text-xl">Some representative placeholder content for the third slide.</div>
