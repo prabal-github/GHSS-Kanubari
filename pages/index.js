@@ -287,7 +287,7 @@ export default function Home() {
 
         <div className="to-black-900 text-black h-10 align-baseline">
           <span>© 2022 Copyright:</span>
-          <Link className="text-black-900 font-semibold" href="https://tailwind-elements.com/">GHSS KANUBARI</Link>
+          <Link href="#!"><a className="text-black font-semibold no-underline"> GHSS KANUBARI</a></Link>
         </div>
       </footer>
 
