@@ -30,10 +30,34 @@ export default function Home() {
             <li className="mx-2 cursor-pointer hover:bg-purple-900 hover:transition duration-500 ease-in-out px-2 py-1 mt-3 rounded-lg font-semibold"><Link href="/about"><a className="no-underline text-white">About us</a></Link></li>
             <li className="mx-2 cursor-pointer hover:bg-purple-900 hover:transition duration-500 ease-in-out px-2 py-1 mt-3 rounded-lg font-semibold">Admission</li>
             <li className="mx-2 cursor-pointer hover:bg-purple-900 hover:transition duration-500 ease-in-out px-2 py-1 mt-3 rounded-lg font-semibold">Administration</li>
-            <li className="mx-2 cursor-pointer hover:bg-purple-900 hover:transition duration-500 ease-in-out px-2 py-1 mt-3 rounded-lg font-semibold">Contact Us</li>
+            <li className="mx-2 cursor-pointer hover:bg-purple-900 hover:transition duration-500 ease-in-out px-2 py-1 mt-3 rounded-lg font-semibold"><Link href="/contact"><a className="no-underline text-white">Contact Us</a></Link></li>
+            {/* <li className="mx-2 cursor-pointer hover:bg-purple-900 hover:transition duration-500 ease-in-out px-2 py-1 mt-3 rounded-lg font-semibold"><div className="text-white" data-toggle="modal" data-target="#myModal">Contact us</div></li> */}
+            {/* <!-- Modal --> */}
+            <div className="modal fade" id="myModal" role="dialog">
+              <div className="modal-dialog">
+
+                {/* <!-- Modal content--> */}
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <button type="button" className="close" data-dismiss="modal">&times;</button>
+                    <h4 className="modal-title">Modal Header</h4>
+                  </div>
+                  <div className="modal-body">
+                    <p>Some text in the modal.</p>
+                  </div>
+                  <div className="modal-footer">
+                    <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
           </ul>
         </div>
       </nav>
+
+
 
       {/* 
 
@@ -49,21 +73,21 @@ export default function Home() {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-            <Image loader={myLoader} src={`https://source.unsplash.com/1820x900/?student,college`} genre='school' width={1820} height={900} className="d-block w-100 blur-sm" alt="1st carousel" />
+              <Image loader={myLoader} src={`https://source.unsplash.com/1820x900/?student,college`} genre='school' width={1820} height={900} unoptimized className="d-block w-100 blur-sm" alt="1st carousel" />
               <div className="carousel-caption d-none d-md-block">
                 <h5 className="font-bold text-5xl">First slide label</h5>
                 <div className="text-xl">Some representative placeholder content for the first slide.</div>
               </div>
             </div>
             <div className="carousel-item">
-              <Image loader={myLoader} src={`https://source.unsplash.com/1820x900/?student,cars`} genre='cars' width={1820} height={900} className="d-block w-100 blur-sm" alt="2nd carousel" />
+              <Image loader={myLoader} src={`https://source.unsplash.com/1820x900/?student,cars`} genre='cars' width={1820} height={900} unoptimized className="d-block w-100 blur-sm" alt="2nd carousel" />
               <div className="carousel-caption d-none d-md-block">
                 <h5 className="font-bold text-5xl">Second slide label</h5>
                 <div className="text-xl">Some representative placeholder content for the second slide.</div>
               </div>
             </div>
             <div className="carousel-item">
-              <Image loader={myLoader} src={`https://source.unsplash.com/1820x900/?student,food`} genre='food' width={1820} height={900} className="d-block w-100 blur-sm" alt="3rd carousel" />
+              <Image loader={myLoader} src={`https://source.unsplash.com/1820x900/?student,food`} genre='food' width={1820} height={900} unoptimized className="d-block w-100 blur-sm" alt="3rd carousel" />
               <div className="carousel-caption d-none d-md-block">
                 <h5 className="font-bold text-5xl">Third slide label</h5>
                 <div className="text-xl">Some representative placeholder content for the third slide.</div>
@@ -126,7 +150,7 @@ export default function Home() {
                   d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
                 </path>
               </svg>
-              </a>
+            </a>
             </Link>
             <Link href="#!" passHref><a className="text-black-900 px-2">
               <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
