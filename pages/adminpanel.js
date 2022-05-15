@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { userAccessToken, fetchUser } from '../utils/fetchUserDetails'
-import { useRouter } from 'next/dist/client/router'
+import { useRouter } from 'next/router'
 import { IoLogOut } from "react-icons/io5";
 
-const adminpanel = () => {
-  const router = useRouter();
+const Adminpanel = () => {
+  const Router = useRouter();
   const [user, setuser] = useState()
 
   // const fetchingUser = () => {
@@ -17,16 +17,16 @@ const adminpanel = () => {
   const fetchingUser = () => {
     const userInfo = localStorage.getItem('user') !== "undefined" 
     ? JSON.parse(localStorage.getItem('user')) 
-    : localStorage.clear() && router.push('/login');
+    : localStorage.clear() && Router.push('/login');
     
     // if(localStorage.getItem('user') === null) setuser(userInfo[0]);
-    if(localStorage.getItem('user') === null) router.push('/login');
+    if(localStorage.getItem('user') === null) Router.push('/login');
     else setuser(userInfo[0]);
 }
 
   const tokenCheck = () => {
     const accessToken = userAccessToken();
-    if (!accessToken) return router.push('/login');
+    if (!accessToken) return Router.push('/login');
   };
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const adminpanel = () => {
 
   const signOut = () => {
     localStorage.clear();
-    router.push('/login');
+    Router.push('/login');
   };
 
   return (
@@ -56,4 +56,4 @@ const adminpanel = () => {
   )
 }
 
-export default adminpanel
+export default Adminpanel

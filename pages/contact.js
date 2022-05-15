@@ -14,7 +14,7 @@ const contact = () => {
                 >
                     Contact Us
                 </button> */}
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
                     Open modal
                 </button>
 
@@ -32,11 +32,11 @@ const contact = () => {
                             {/* <!-- Modal body --> */}
                             <form>
                                 <div className="mb-3">
-                                    <label for="sender-name" className="col-form-label">Sender:</label>
+                                    <label htmlFor="sender-name" className="col-form-label">Sender:</label>
                                     <input type="text" className="form-control" id="sender-name" />
                                 </div>
                                 <div className="mb-3">
-                                    <label for="message-text" className="col-form-label">Message:</label>
+                                    <label htmlFor="message-text" className="col-form-label">Message:</label>
                                     <textarea className="form-control" id="message-text"></textarea>
                                 </div>
                             </form>
@@ -44,7 +44,7 @@ const contact = () => {
                             {/* <!-- Modal footer --> */}
                             <div className="modal-footer">
                                 <button type="button" className="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Send message</button>
+                                <button type="button" className="btn btn-primary">Send message</button>
                             </div>
 
                         </div>
