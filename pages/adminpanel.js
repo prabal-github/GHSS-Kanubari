@@ -47,13 +47,11 @@ const adminpanel = () => {
         </div>
         <div className="text-x1 flex items-center mx-2 font-bold text-2xl justify-start cursor-pointer">Welcome {user?.displayName}!</div>
       </div>
-      {/* <div className="flex"> */}
-        <div className="mr-5 cursor-pointer hover:bg-purple-900 hover:transition duration-500 ease-in-out py-1 rounded-lg font-semibold 
-        px-2 space-x-8 flex justify-end text-lg align-middle" onClick={signOut}>
-          <p className='text-lg font-semibold mb-0 text-black'>Logout</p>
-          <IoLogOut className='text-black ml-0' fontSize={30} />
+        <div className="mr-5 p-2 mb-0 cursor-pointer hover:bg-purple-900 hover:transition duration-500 ease-in-out rounded-lg font-semibold 
+         flex justify-end text-lg align-middle content-center" onClick={signOut}>
+          <p className='text-lg font-semibold mx-2 mb-0 text-black'>Logout</p>
+          <IoLogOut className='text-black mb-0' fontSize={30} />
         </div>
-      {/* </div> */}
     </nav>
   )
 }
