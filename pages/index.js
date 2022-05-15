@@ -29,30 +29,9 @@ export default function Home() {
             <li className="mx-2 cursor-pointer hover:bg-purple-900 hover:transition duration-500 ease-in-out px-2 py-1 mt-3 rounded-lg font-semibold">Home</li>
             <li className="mx-2 cursor-pointer hover:bg-purple-900 hover:transition duration-500 ease-in-out px-2 py-1 mt-3 rounded-lg font-semibold"><Link href="/about"><a className="no-underline text-white">About us</a></Link></li>
             <li className="mx-2 cursor-pointer hover:bg-purple-900 hover:transition duration-500 ease-in-out px-2 py-1 mt-3 rounded-lg font-semibold">Admission</li>
-            <li className="mx-2 cursor-pointer hover:bg-purple-900 hover:transition duration-500 ease-in-out px-2 py-1 mt-3 rounded-lg font-semibold">Administration</li>
             <li className="mx-2 cursor-pointer hover:bg-purple-900 hover:transition duration-500 ease-in-out px-2 py-1 mt-3 rounded-lg font-semibold"><Link href="/contact"><a className="no-underline text-white">Contact Us</a></Link></li>
+            <li className="mx-2 cursor-pointer hover:bg-purple-900 hover:transition duration-500 ease-in-out px-2 py-1 mt-3 rounded-lg font-semibold"><Link href="/adminpanel"><a className="no-underline text-white">Admin</a></Link></li>
             {/* <li className="mx-2 cursor-pointer hover:bg-purple-900 hover:transition duration-500 ease-in-out px-2 py-1 mt-3 rounded-lg font-semibold"><div className="text-white" data-toggle="modal" data-target="#myModal">Contact us</div></li> */}
-            {/* <!-- Modal --> */}
-            <div className="modal fade" id="myModal" role="dialog">
-              <div className="modal-dialog">
-
-                {/* <!-- Modal content--> */}
-                <div className="modal-content">
-                  <div className="modal-header">
-                    <button type="button" className="close" data-dismiss="modal">&times;</button>
-                    <h4 className="modal-title">Modal Header</h4>
-                  </div>
-                  <div className="modal-body">
-                    <p>Some text in the modal.</p>
-                  </div>
-                  <div className="modal-footer">
-                    <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
           </ul>
         </div>
       </nav>
